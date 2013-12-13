@@ -8,6 +8,7 @@ on 'develop' => sub {
     requires 'Archive::Tar::Wrapper';
     requires 'Dist::Zilla';
     requires 'Dist::Zilla::Plugin::NameFromDirectory';
+    requires 'Dist::Zilla::Plugin::LicenseFromModule';
     requires 'Dist::Zilla::Plugin::ReadmeAnyFromPod';
     requires 'Dist::Zilla::Plugin::CheckChangeLog';
     requires 'Dist::Zilla::Plugin::FakeRelease';
