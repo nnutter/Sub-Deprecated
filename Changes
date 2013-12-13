@@ -1,6 +1,6 @@
 Revision history for Sub::Deprecated:
 
-0.003001 2012-12-12
+0.003001 2012-12-13
  - Remove dependency on Sub::Install.
  - Updated documentation.
 
