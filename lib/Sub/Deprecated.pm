@@ -79,7 +79,7 @@ Nathaniel G. Nutter <nnutter@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Ryan C. Thompson.
+This software is copyright (c) 2013 by Nathaniel G. Nutter.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
