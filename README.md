@@ -4,7 +4,7 @@ Sub::Deprecated - Warn when deprecated subroutines are used
 
 # VERSION
 
-version 0.003001
+version 0.003002
 
 # SYNOPSIS
 
@@ -25,18 +25,22 @@ Provides a `:Deprecated` attribute for subroutines that can be used to
 decorate deprecated subroutines.  The decorator produces a warning using the
 supplied version string and optional message.
 
-# SEE ALSO
-
 Inspired by [Sub::Private](https://metacpan.org/pod/Sub::Private) which provides a `:Private` attribute
 for subroutines.
+
+# SEE ALSO
+
+[Sub::Private](https://metacpan.org/pod/Sub::Private)
 
 # AUTHOR
 
 Nathaniel G. Nutter <nnutter@cpan.org>
 
-# COPYRIGHT AND LICENSE
+# COPYRIGHT
 
-This software is copyright (c) 2013 by Nathaniel G. Nutter.
+Copyright 2013 - Nathaniel G. Nutter
 
-This is free software; you can redistribute it and/or modify it under the same
-terms as the Perl 5 programming language system itself.
+# LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
