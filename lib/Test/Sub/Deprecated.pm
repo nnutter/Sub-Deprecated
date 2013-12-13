@@ -1,18 +1,24 @@
 package Test::Sub::Deprecated;
 use base qw(Sub::Deprecated);
-use vars qw($version $message);
+use vars qw($version $message $scalar @list);
 
 $version = 1.0.5;
 $message = 'Use something not deprecated instead.';
+$scalar = 'MyScalar';
+@list = ('My', 'List');
 
 sub something {
-    return 1;
+    if (wantarray) {
+        return @list;
+    } else {
+        return $scalar;
+    }
 }
 
 sub something_deprecated : Deprecated($version) {
-    return 1;
+    something();
 }
 
 sub something_deprecated_with_message : Deprecated($version, $message) {
-    return 1;
+    something();
 }
