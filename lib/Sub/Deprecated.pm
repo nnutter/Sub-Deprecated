@@ -4,7 +4,6 @@ use warnings;
 package Sub::Deprecated;
 
 use Attribute::Handlers;
-use Sub::Install qw(reinstall_sub);
 
 sub Deprecated : ATTR {
     my ($package, $symbol, $referent, $attr, $data, $phase, $file, $line) = @_;
@@ -24,7 +23,8 @@ sub Deprecated : ATTR {
     my $name = *{$symbol}{NAME};
     my ($deprecated_version, $message) = @{$data};
 
-    my $replacement_sub = sub {
+    no warnings 'redefine';
+    *{$symbol} = sub {
         my $warning = sprintf(
             'WARNING: %s::%s deprecated as of v%vd.',
             $package, $name, $deprecated_version,
@@ -36,12 +36,6 @@ sub Deprecated : ATTR {
         warn $warning, "\n";
         goto &$referent;
     };
-
-    reinstall_sub({
-        into => $package,
-        as   => $name,
-        code => $replacement_sub,
-    });
 }
 
 1;

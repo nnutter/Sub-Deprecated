@@ -1,5 +1,4 @@
 requires 'Attribute::Handlers';
-requires 'Sub::Install';
 
 on 'test' => sub {
     requires 'Test::More';
