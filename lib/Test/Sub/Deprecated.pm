@@ -23,6 +23,10 @@ sub something_deprecated_with_message : Deprecated($version, $message) {
     something();
 }
 
+sub caller : Deprecated($version) {
+    return caller;
+}
+
 sub args_passthrough : Deprecated($cersion) {
     return @_;
 }
