@@ -10,7 +10,7 @@ on 'develop' => sub {
     requires 'Dist::Zilla::Plugin::NameFromDirectory';
     requires 'Dist::Zilla::Plugin::LicenseFromModule';
     requires 'Dist::Zilla::Plugin::ReadmeAnyFromPod';
-    requires 'Dist::Zilla::Plugin::CheckChangeLog';
+    requires 'Dist::Zilla::Plugin::CheckChangesHasContent';
     requires 'Dist::Zilla::Plugin::FakeRelease';
     requires 'Dist::Zilla::Plugin::Git::GatherDir';
     requires 'Dist::Zilla::Plugin::Git::NextVersion';
