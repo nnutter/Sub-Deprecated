@@ -9,6 +9,7 @@ on 'develop' => sub {
     requires 'Archive::Tar::Wrapper';
     requires 'Dist::Zilla';
     requires 'Dist::Zilla::Plugin::FakeRelease';
+    requires 'Dist::Zilla::Plugin::Git::GatherDir';
     requires 'Dist::Zilla::Plugin::Git::Tag';
     requires 'Dist::Zilla::Plugin::NextVersion::Semantic';
     requires 'Dist::Zilla::Plugin::NextVersion::Semantic';
