@@ -34,7 +34,7 @@ sub Deprecated : ATTR {
             $warning .= '  ' . $message;
         }
         warn $warning, "\n";
-        $referent->();
+        $referent->(@_);
     };
 
     reinstall_sub({
