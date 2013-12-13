@@ -73,6 +73,11 @@ Provides a C<:Deprecated> attribute for subroutines that can be used to
 decorate deprecated subroutines.  The decorator produces a warning using the
 supplied version string and optional message.
 
+=head1 SEE ALSO
+
+Inspired by L<Sub::Private|Sub::Private> which provides a C<:Private> attribute
+for subroutines.
+
 =head1 AUTHOR
 
 Nathaniel G. Nutter <nnutter@cpan.org>
