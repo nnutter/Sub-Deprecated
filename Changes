@@ -10,13 +10,13 @@ Revision history for {{$dist->name}}
 
  [ENHANCEMENTS]
 
-0.2.0 2012-12-12
+0.2.0 2012-12-12T22:00-05:00
  [BUG FIXES]
  - Fix args not being passed to original code.
 
  [ENHANCEMENTS]
  - Use goto-&NAME to improve caller context (and avoid extra stack?).
 
-0.1.0 2012-12-12
+0.1.0 2012-12-12T15:00-05:00
  - Initial release.
 
