@@ -6,7 +6,7 @@ use base qw(Sub::Deprecated);
 use vars qw($version $message $scalar @list);
 
 BEGIN {
-    $version = 1.0.5;
+    $version = '1.0.5';
     $message = 'Use something not deprecated instead.';
     $scalar = 'MyScalar';
     @list = ('My', 'List');

@@ -15,7 +15,7 @@ BEGIN {
     *{early_something_deprecated} = \&Test::Sub::Deprecated::something_deprecated;
 };
 
-my $expected_version = sprintf('%vd', $Test::Sub::Deprecated::version);
+my $expected_version = $Test::Sub::Deprecated::version;
 my $expected_version_re = qr/\Q$expected_version\E/;
 my $expected_message_re = qr/\Q$Test::Sub::Deprecated::message\E/;
 
