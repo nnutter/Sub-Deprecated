@@ -8,7 +8,7 @@ our $VERSION = "0.003002";
 
 use Attribute::Handlers;
 
-sub Deprecated : ATTR {
+sub Deprecated : ATTR(CODE,BEGIN) {
     my ($package, $symbol, $referent, $attr, $data, $phase, $file, $line) = @_;
 
     my $die = sub {
