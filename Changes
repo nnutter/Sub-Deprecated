@@ -2,6 +2,7 @@ Revision history for Sub::Deprecated:
 
 {{$NEXT}}
 
+    - Specify version as a string so user has control of representation.
     - Modify subroutine during BEGIN phase instead of CHECK phase.
 
 0.003002 2012-12-13

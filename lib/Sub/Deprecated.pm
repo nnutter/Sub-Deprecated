@@ -29,7 +29,7 @@ sub Deprecated : ATTR(CODE,BEGIN) {
     no warnings 'redefine';
     *{$symbol} = sub {
         my $warning = sprintf(
-            'WARNING: %s::%s deprecated as of v%vd.',
+            'WARNING: %s::%s deprecated as of %s.',
             $package, $name, $deprecated_version,
         );
         if (defined $message && $message) {
