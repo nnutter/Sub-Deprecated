@@ -1,3 +1,6 @@
+use strict;
+use warnings;
+
 package Test::Sub::Deprecated;
 use base qw(Sub::Deprecated);
 use vars qw($version $message $scalar @list);
@@ -27,6 +30,8 @@ sub caller : Deprecated($version) {
     return caller;
 }
 
-sub args_passthrough : Deprecated($cersion) {
+sub args_passthrough : Deprecated($version) {
     return @_;
 }
+
+1;
