@@ -3,6 +3,10 @@ use warnings;
 
 use Test::More tests => 3;
 
+use File::Basename qw(dirname);
+use File::Spec qw();
+
+use lib File::Spec->join(dirname(__FILE__), 'lib');
 use Test::Sub::Deprecated;
 
 my ($package, $filename, $line) = do {
