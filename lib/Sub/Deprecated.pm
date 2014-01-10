@@ -1,7 +1,10 @@
+package Sub::Deprecated;
+
+use 5.008005;
 use strict;
 use warnings;
 
-package Sub::Deprecated;
+our $VERSION = "0.003002";
 
 use Attribute::Handlers;
 

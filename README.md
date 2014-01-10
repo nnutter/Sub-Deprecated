@@ -1,10 +1,7 @@
+[![Build Status](https://travis-ci.org/nnutter/Sub-Deprecated.png?branch=master)](https://travis-ci.org/nnutter/Sub-Deprecated)
 # NAME
 
 Sub::Deprecated - Warn when deprecated subroutines are used
-
-# VERSION
-
-version 0.003002
 
 # SYNOPSIS
 
