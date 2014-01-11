@@ -43,7 +43,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Attribute::Handlers" : "0",
+            "Attribute::Handlers" : "0.93",
             "perl" : "5.008005"
          }
       },
@@ -65,7 +65,7 @@
          "web" : "https://github.com/nnutter/Sub-Deprecated"
       }
    },
-   "version" : "0.003002",
+   "version" : "0.04",
    "x_contributors" : [
       "Nathaniel Nutter <iam@nnutter.com>"
    ]

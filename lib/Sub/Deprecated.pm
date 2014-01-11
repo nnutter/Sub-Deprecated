@@ -4,7 +4,7 @@ use 5.008005;
 use strict;
 use warnings;
 
-our $VERSION = "0.003002";
+our $VERSION = "0.04";
 
 use Attribute::Handlers;
 
